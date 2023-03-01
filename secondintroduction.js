@@ -49,3 +49,14 @@ const player = {
 console.log(player.name)
 player.sayHello("Rinier");
 player.sayHello("Jimuel");
+
+
+//////////////////// RETURN FUNCTION
+const age = 97;
+
+function calculateAge(ageOfMe){
+    return ageOfMe + 2;
+}
+
+const mrRin = calculateAge(age)
+console.log(mrRin)
