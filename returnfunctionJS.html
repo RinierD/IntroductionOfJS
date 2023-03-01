@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Sample Return function
+        const age = 42;
+
+        function calculateMyAge(ageOfMe){
+            return ageOfMe + 4;
+        }
+
+        const rinAge = calculateMyAge(age)
+        console.log(rinAge)
+
+        //// Simple Calculator
+        const calculator = {
+            plus: function (a, b){
+                return a + b
+                //console log will ignore since we already return the result on above code line
+                console.log("Sample")
+            },
+            minus: function (a, b){
+                return a - b
+            },
+            divide: function (a, b){
+                return a / b
+            },
+            multi: function (a, b){
+                return a * b
+            },
+        };
+
+        const additionResult = calculator.plus(4, 5)
+        const subtractionResult = calculator.minus(additionResult, 5)
+        const divisionResult = calculator.divide(8, 2)
+        const multiplicationResult = calculator.multi(additionResult, 8)
+        const powerResult = calculator.plus(divisionResult, multiplicationResult)
+        console.log(additionResult)
+        console.log(subtractionResult)
+        console.log(divisionResult)
+        console.log(multiplicationResult)
+        console.log(powerResult)
+ 
+    </script>
+</body>
+</html>

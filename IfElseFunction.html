@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        ////// Check input type if number or not and change it to number
+        // const age = prompt("Input your Age?");
+        // console.log(age, parseInt(age));
+
+
+        ////// Short line of above code
+        // const age = parseInt(prompt("Input your age"));
+        // console.log(age)
+
+        ////// Use of isNaN(Is not Number), booloean type
+        // const age = parseInt(prompt("Input your age"));
+        // console.log(isNaN(age))
+        
+        // if(isNaN(age)){
+        //     console.log("Not a number")
+        // } else{
+        //     console.log("Your age is " + age)
+        // }
+
+        const age = parseInt(prompt("How old are you?"));
+        
+        if(isNaN(age) || age < 0){
+            console.log("Please write a real positive number")
+        } else if (age < 18) {
+            console.log("You are too young")
+        } else if (age >= 18 && age <= 50) {
+            console.log("You can drink")
+        } else if (age >= 50 && age <= 100){
+            console.log("You are too old")
+        } else if(age === 101){
+            console.log("You need to rest")
+        } else {
+            console.log("Are you immortal?")
+        }
+        // else if(age !== 102){
+        //     console.log("Not 102")
+        // }
+
+    </script>
+</body>
+</html>
