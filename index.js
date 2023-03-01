@@ -24,7 +24,14 @@ countElement()
 
 
 console.log(daysofweeks);
+daysofweeks[4] = ("friday");
+console.log(daysofweeks);
 daysofweeks.push("Sunday");
+console.log(daysofweeks);
+// Add another value to Array but this time using other Variable such as Number and boolean
+daysofweeks.push(10);
+console.log(daysofweeks);
+daysofweeks.push(true);
 console.log(daysofweeks);
 
 
