@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Searching for elements -->
+    <h1 class="class-title" id="main-title"></h1>
+
+    <p class="grab-me"> Grab me using class!</p>
+    <p class="grab-me"> Grab me using class!</p>
+    <p class="grab-me"> Grab me using class!</p>
+    <p class="grab-me"> Grab me using class!</p>
+    <p class="grab-me"> Grab me using class!</p>
+
+
+    <h3>Grab me using tagname</h3>
+    <h3>Grab me using tagname</h3>
+    <h3>Grab me using tagname</h3>
+    <h3>Grab me using tagname</h3>
+
+
+    <div class="grab-query">
+        <h2>Grabe me using Query</h2>
+    </div>
+
+    <div class="grab-all-query">
+        <h2>Grabe me using All element Query</h2>
+        <h2>Grabe me using All element Query</h2>
+        <h2>Grabe me using All element Query</h2>
+        <h2>Grabe me using All element Query</h2>
+    </div>
+
+    <div class="grab-child-query">
+        <p>Grabe te elements inside of div</p>
+        <p>Grabe te elements inside of div</p>
+        <p>Grabe te elements inside of div</p>
+        <p>Grabe te elements inside of div</p>
+    </div>
+    <!-- End of Searching for elements -->
+
+
+    <script>
+        //Get the element from the HTML
+        const title = document.getElementById("main-title");
+        //Get elements that has class name of grabme
+        const grabClass  = document.getElementsByClassName("grab-me");
+        //Get elements that has h3 Tag
+        const grabTagname = document.getElementsByTagName("h3");
+        //Get element using Query selector
+        const grabQuery = document.querySelector(".grab-query h2");
+        //Get element using all Query selector
+        const grabAllQuery = document.querySelectorAll(".grab-all-query h2");
+
+        const grabChildQuery = document.querySelector(".grab-child-query:first-child p");
+        //Change the element using JV
+        
+
+        //Console log the name of the element of HTML
+        console.log(title.id);
+        //Console log the elements using classname
+        console.log(title.className);
+        //Console log all with the names of grab-me
+        console.log(grabClass);
+        //Console log the element using Query / Only return the first one element
+        console.log(grabQuery);
+        //Console log the element using Query / Only return the first one element
+        console.log(grabAllQuery);
+        //Console log the element inside of the div element
+        console.log(grabChildQuery);
+        grabChildQuery.innerText = "has changed"
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+            
+    </style>
+<body>
+    <form id="login-form">
+        <input required maxlength="15" type="text" placeholder="Enter your name">
+        <button>Log In</button>
+    </form>
+
+
+    <script>
+        const loginForm = document.getElementById("login-form");
+        const loginInput = loginForm.querySelector("input");
+
+        // Shorter version searching of element +++++++++++++
+        // const loginInput = document.querySelector("#loginForm input");
+        // const loginButton = document.querySelector("#loginForm button");
+
+
+        // Hardcoded checking of the input of the user inside of the div element
+        // function onLoginBtnClick(){
+        //     const inputValue = loginInput.value;
+
+        //     if (inputValue === ""){
+        //         alert("Please input name");
+        //     } else if(inputValue.length > 10){
+        //         alert("Your name is too long");
+        //     } else
+        //         console.log(inputValue)
+        // }
+
+        function onLoginSubmitClick(tomato){
+            tomato.preventDefault();
+            const username = loginInput.value;
+            console.log(username);
+        }
+
+
+        loginForm.addEventListener("submit", onLoginSubmitClick)
+
+    </script>
+</body>
+</html>

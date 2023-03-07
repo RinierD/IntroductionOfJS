@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: beige;
+        }
+        
+        h3{
+            color: cornflowerblue;
+            transition: color .5s ease-in-out;
+        }
+        .active{
+            color: tomato;
+        }
+
+    </style>
+
+    <div class="main">
+        <h1> This is Rinier Pogi </h1>
+    </div>
+    
+    <h2 class="paragraph-body">AHHAHAHA</h2>
+
+    <h3 class="body-active">This is new</h3>
+
+    <script>
+        const mainTitle = document.querySelector(".main:first-child h1");
+        const parBody = document.querySelector(".paragraph-body");
+        const h3 = document.querySelector("h3");
+
+        //Declaration of function+++++++++++++
+        // function handleTextClick(){
+        //     mainTitle.style.color = "green"
+        // }
+
+        // function handleMouseEnter(){
+        //     mainTitle.innerText = "Mouse is enter"
+        // }
+
+        // function handleMouseLeave(){
+        //     mainTitle.innerText = "Mouse is leave"
+        // }
+
+        // function handleWindowsresize(){
+        //     document.body.style.backgroundColor = "grey";
+        // }
+
+        // function handleWindowsOffline(){
+        //     alert("WHAAAAAAAAAAAAAAA NO WIFIIIIIIIII");
+        // }
+
+        // function handleWindowsOnline(){
+        //     alert("NOICE THIS IS NOT PLDT");
+        // }
+
+        //Onclick event  to change color++++++++++++
+        // function handleParClick(){
+        //     const currentParColor = parBody.style.color;
+        //     let newColor;
+        //     if (currentParColor === "blue"){
+        //         newColor = "tomato"
+        //     } else{
+        //         newColor = "blue";
+        //     }
+        //     parBody.style.color = newColor;
+        // }
+        // parBody.addEventListener("click", handleParClick);
+
+
+        //Removing classname with new one and didn't return the original classname +++++++++++++++
+        // function handleActiveClick(){
+        //     const clickedClass = "active"
+        //     if(h3.className === clickedClass){
+        //         h3.className = "";
+        //     } else{
+        //         h3.className = clickedClass;
+        //     }
+        // }
+
+        //Changing classname without removing the original classname+++++++++++
+        // function handleActiveClick(){
+        //     const clickedClass = "active"
+        //     if(h3.classList.contains(clickedClass)){
+        //         h3.classList.remove(clickedClass);
+        //     } else{
+        //         h3.classList.add(clickedClass);
+        //     }
+        // }
+        
+        //Using toggle to check if the class has sa a class name of class or not
+        function handleActiveClick(){
+            h3.classList.toggle("active");
+        }
+
+        //Event listener Long version of below code++++++++++++++++
+        h3.addEventListener("click", handleActiveClick);
+        // mainTitle.addEventListener("click", handleTextClick);
+        // mainTitle.addEventListener("mouseenter", handleMouseEnter);
+        // mainTitle.addEventListener("mouseleave", handleMouseLeave);
+        // window.addEventListener("resize", handleWindowsresize);
+        // window.addEventListener("offline", handleWindowsOffline);
+        // window.addEventListener("offline", handleWindowsOnline);
+
+
+        //Event listener Shorter version of above code++++++++++++++
+        // mainTitle.onclick = handleTextClick
+        // mainTitle.onmouseenter = handleMouseEnter
+        // mainTitle.onmouseleave = handleMouseLeave
+        // window.onresize = handleWindowsresize
+
+    </script>
+</body>
+</html>
